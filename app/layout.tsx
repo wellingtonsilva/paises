@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="pt-br">
       <body className={nunitoSans.className}>
       <Header />
-        <main className="bg-gray-100 min-h-screen">
+        <main className="min-h-screen">
           {children}
         </main> 
         

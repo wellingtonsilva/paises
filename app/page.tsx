@@ -1,7 +1,5 @@
 import { CountriesType } from '@/type/CountriesType';
 import CountriesCard from '@/components/CountriesCard/CountriesCard';
-import Image from 'next/image'
-import Link from 'next/link';
 
 const getCountries = async ():Promise<CountriesType[]> => {
   const response = await fetch('https://restcountries.com/v3.1/all');

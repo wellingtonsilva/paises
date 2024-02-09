@@ -35,10 +35,9 @@ const getCountryBordersByName = async (name:string) => {
 }
 
 const Country = async ({params: {name},}: {params: {name:string}}) => {
- const country = await getCountryByname(decodeURI(name));
-  const borderCountries = await getCountryBordersByName(decodeURI(name))
+const country = await getCountryByname(decodeURI(name));
+const borderCountries = await getCountryBordersByName(decodeURI(name))
  const formatter = Intl.NumberFormat('en', {notation: "compact"})
-
   return (
     <section className='mx-auto max-w-[1400px] flex flex-col'>
       
@@ -72,9 +71,6 @@ const Country = async ({params: {name},}: {params: {name:string}}) => {
                 ))}
               </li>
               )}
-             
-        
-           
           </ul>  
         </section>
         <figure className='relative my-2 h-48 md:h-auto md:w-96 shadow-md md:order-last order-first'>
@@ -83,14 +79,21 @@ const Country = async ({params: {name},}: {params: {name:string}}) => {
       </article>
 
       <section className='p-5 md:pl-3'>
-        <h3 className='mt-12 mb-3 text-2xl font-semibold text-gray-800'>Paises que fazem fronteira</h3>
-        <div className=''>
-          <ul className='mb-3  w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8'>
-                {borderCountries?.map((border) => (
-                  <CountriesCard key={border.name} {...border} />
-                ))}
-          </ul>
-        </div>
+
+        {borderCountries !== undefined ?  (
+          <>
+            <h3 className='mt-12 mb-3 text-2xl font-semibold text-gray-800'>Paises que fazem fronteira</h3>
+            <div className=''>
+              <ul className='mb-3  w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8'>
+                    {borderCountries?.map((border) => (
+                      <CountriesCard key={border.name} {...border} />
+                    ))}
+              </ul>
+            </div>
+          </>
+        ) : <h3 className='mt-12 mb-3 text-2xl font-semibold text-gray-800'>Esse país não tem fronteira terrestre</h3>}
+
+      
       </section>
     </section>
   )
