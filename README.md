@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mini-projeto API REST Countries
 
-## Getting Started
+Descrição:
+Este mini-projeto demonstra a utilização da API REST Countries para obter dados de países. O projeto foi desenvolvido com as seguintes tecnologias:
 
-First, run the development server:
+## Tecnologias:
 
-```bash
+# Markdown Next.js 13: Framework React para aplicações web estáticas e dinâmicas.
+# Markdown TailwindCSS: Ferramenta de estilo CSS com foco em classes utilitárias.
+# Markdown Server Components: Modelo de renderização do lado do servidor para componentes React.
+# Markdown Data fetching: Busca de dados assíncrona da API REST Countries.
+# Markdown Nested layouts: Estrutura de layout aninhada para organização do conteúdo.
+# Markdown Routes: Roteamento de URLs para diferentes páginas do projeto.
+# Markdown pages.tsx: Arquivos que definem as páginas do projeto.
+# Markdown layout.tsx: Layout principal que define a estrutura básica das páginas.
+# Markdown error.tsx: Página de erro exibida em caso de falha na requisição.
+# Markdown loading.tsx: Página de carregamento exibida enquanto a requisição está em andamento.
+
+## Executando o projeto:
+Para executar o projeto, siga estas etapas:
+
+### Requisitos:
+Node.js versão 17.4.0 ou superior
+
+### Comandos:
+Instale as dependências do projeto:
+npm i
+Inicie o servidor de desenvolvimento:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Acesse o projeto no navegador em http://localhost:3000.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Documentação da API REST Countries: https://restcountries.com/v3.1/all
+Documentação do Next.js: https://nextjs.org/docs/
+Documentação do TailwindCSS: https://tailwindcss.com/
